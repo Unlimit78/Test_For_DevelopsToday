@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-import django_heroku
+import django_heroku     #comment this 
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -46,7 +46,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',           #comment this 
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -73,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "Test_For_DevelopsToday.wsgi.application"
+WSGI_APPLICATION = "Test_For_DevelopsToday.wsgi.application"    #comment this 
 
 
 # Database
@@ -124,7 +124,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = "/static/"
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'    #comment this 
 
 CELERY_BROKER_URL = "redis://h:pfe15eb49845735864840260ebf90495e88f6c5fddba9d719ee09885651fcb359@ec2-54-197-140-154.compute-1.amazonaws.com:23989"
 
@@ -132,4 +132,4 @@ CELERY_ACCEPT_CONTENT = ["application/json"]
 CELERY_TASK_SERIALIZER = "json"
 
 
-django_heroku.settings(locals())
+django_heroku.settings(locals())    #comment this 
