@@ -126,7 +126,7 @@ USE_TZ = True
 STATIC_URL = "/static/"
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'    #comment this 
 
-CELERY_BROKER_URL = "redis://h:pfe15eb49845735864840260ebf90495e88f6c5fddba9d719ee09885651fcb359@ec2-54-197-140-154.compute-1.amazonaws.com:23989"
+CELERY_BROKER_URL = "redis://h:p09f1e2c1610caaf263d28c1ff0da210ad7050b6261580847283b38728c2379bd@ec2-3-226-0-12.compute-1.amazonaws.com:14569"
 
 CELERY_ACCEPT_CONTENT = ["application/json"]
 CELERY_TASK_SERIALIZER = "json"
